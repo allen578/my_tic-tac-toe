@@ -213,8 +213,8 @@ def AI_put(player):
     print("Now turn to the AI to play ! ")
     decision = 0  # AI最后决定的位置，初始化为0
     # 首先判断棋盘是否为空：如果为空，直接下在左上角
-    if board.count(" ") == 9: # 棋盘为空
-        board[1] = player
+    if board.count(" ") == 9: # 棋盘为空，就将棋子固定在左上角
+        board[1] = player  
         num_board[1] = " "
         return
     
